@@ -1,6 +1,10 @@
 # screepsmod-auth
 
-## This adds the client to the backend as /client
+## This adds user/pass auth to the screeps private server
+
+[![NPM info](https://nodei.co/npm/screepsmod-auth.png?downloads=true)](https://npmjs.org/package/screepsmod-auth)
+
+[![Circle CI](https://circleci.com/gh/ScreepsMods/screepsmod-auth.svg?style=shield)](https://circleci.com/gh/ScreepsMods/screepsmod-auth)
 
 # Installation 
 
