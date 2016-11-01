@@ -1,0 +1,9 @@
+machine:
+  node:
+    version: '6.1.0'
+deployment:
+  npm:
+    branch: master
+    commands:
+      - echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
+      - npm run 2npm
