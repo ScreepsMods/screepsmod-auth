@@ -16,5 +16,10 @@
 2. In console, run `setPassword('YourDesiredPassword')`
 3. Now you should be able to login via API or a web client via [ScreepsMod-Client](https://github.com/ScreepsMods/screepsmod-client)
 
+# API
+
+### config.auth.authUser(username,password)
+Returns a Promise, resovles to either the user object or `false`
+
 # Notes:
 This is NOT compatible with screepsmod-apitoken, having both installed may result in issues.
