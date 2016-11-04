@@ -8,10 +8,8 @@
 
 # Installation 
 
-## The NPM way
-1. Make sure you have [ModLoader](https://github.com/ScreepsMods/screepsmod-modloader) installed
-2. `npm install screepsmod-auth` in your mods folder.
-3. Thats it!
+1. `npm install screepsmod-auth` in your mods folder.
+2. Thats it!
 
 # Usage
 1. Open the steam screeps client
