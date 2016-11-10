@@ -14,7 +14,7 @@
 # Usage
 1. Open the steam screeps client
 2. In console, run `setPassword('YourDesiredPassword')`
-3. Now you should be able to login via API or a web client via [ScreepsMod-Client](https://github.com/ScreepsMods/screepsmod-client)
+3. Now you should be able to login via API
 
 # API
 
