@@ -8,7 +8,7 @@
 
 # Installation 
 
-1. `npm install screepsmod-auth` in your mods folder.
+1. `npm install screepsmod-auth` in your server folder.
 2. Thats it!
 
 # Usage
