@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "2npm":"publish"
+    "2npm": "publish"
   },
   "devDependencies": {
     "publish": "^0.6.0"
   },
-  "screeps_mod":true,
+  "screeps_mod": true,
   "keywords": [
     "screeps",
     "mod"
@@ -20,9 +20,11 @@
   "dependencies": {
     "basic-auth": "^1.0.4",
     "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
     "passport": "^0.3.2",
     "passport-http": "^0.3.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "passport-steam": "^1.0.8"
   }
 }
