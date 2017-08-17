@@ -21,5 +21,16 @@
 ### config.auth.authUser(username,password)
 Returns a Promise, resovles to either the user object or `false`
 
-# Notes:
-This is NOT compatible with screepsmod-apitoken, having both installed may result in issues.
+# Github Auth
+To enable github auth, you need to add a github client id and client secret to your .screepsrc  
+(Or ENV vars GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET with other launchers)
+
+Make sure to set the callback url to point to `/api/auth/github/return` on your server. ex: `https://screeps.mydomain.com/api/auth/github/return`  
+Get the id and secret from youe Github settings: https://github.com/settings/developers
+
+.screepsrc
+```ini
+[github]
+clientId = <clientId>
+clientSecret = <clientSecret>
+```
