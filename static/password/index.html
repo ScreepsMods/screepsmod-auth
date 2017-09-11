@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="screepsmod-auth">
+	<head>
+		<meta charset="UTF-8">
+		<title>Set Password</title>
+		<script src="angular.min.js"></script>
+		<script src="main.js"></script>
+	</head>
+	<body ng-controller="password as p">
+		<form class="flex col cont">
+			<div>
+				Old password is ignored if you don't have one set
+			</div>
+			<br>
+			<div class="flex">
+				<label class="flex-1">Old Password</label>
+				<input type="password" ng-model="p.oldpass">
+			</div>
+			<div class="flex">
+				<label class="flex-1">New Password</label>
+				<input type="password" ng-model="p.newpass" required>
+			</div>
+			<div class="flex">
+				<label class="flex-1">New Password (Repeat)</label>
+				<input type="password" ng-model="p.newpass2" required>
+			</div>
+			<br>
+			<div class="flex steam">
+				<a href="/api/auth/steam" target="_blank" ng-click="p.steam()">
+					<img src="sits_01.png">
+				</a>
+			</div>
+			<div class="status" ng-bind="p.status"></div>
+			<br>
+			<br>
+			NOTE: Internet Explorer not supported! If using IE, switch to Chrome, Firefox, Edge, or another modern browser instead.
+		</form>
+		<style>
+			body {
+				background: #030303;
+				margin: 0;			
+				padding: 0;
+			}
+			.flex {
+				display:  flex;
+				margin: 2px 0;
+			}
+			.flex.col {
+				flex-direction: column;
+			}
+			.flex-1 {
+				flex: 1;
+			}
+			.cont {
+			    width: 350px;
+			    margin: auto;
+			    background: #222222;
+			    border-radius: 10px;
+			    color: #ccc;
+			    padding: 20px;
+			    margin-top: 20vh;
+			}
+			input {
+				background-color: #6f6f6f;
+			    border: 1px solid #666;
+			    border-radius: 5px;
+			    padding: 0px 5px;
+			}
+			.steam {
+				justify-content: flex-end;
+			}
+		</style>
+	</body>
+</html>

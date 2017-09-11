@@ -12,9 +12,18 @@
 2. Thats it!
 
 # Usage
+
+## Steam Console method
 1. Open the steam screeps client
 2. In console, run `setPassword('YourDesiredPassword')`
 3. Now you should be able to login via API
+
+## Web Form Method
+1. Open the steam client at least once (Required to create initial account)
+2. Goto http://<yourserverip>:21025/authmod/password/
+3. Enter your desired password
+4. Click Signin with steam
+5. Your password should be set and you be able to login via API
 
 # API
 
