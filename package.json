@@ -1,6 +1,6 @@
 {
   "name": "screepsmod-auth",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
+    "ini": "^1.3.4",
     "passport": "^0.3.2",
     "passport-github": "^1.1.0",
     "passport-http": "^0.3.0",
