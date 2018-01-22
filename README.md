@@ -43,3 +43,15 @@ Get the id and secret from youe Github settings: https://github.com/settings/dev
 clientId = <clientId>
 clientSecret = <clientSecret>
 ```
+
+# Initial CPU and Spawn Blocking
+
+You can set the initial CPU that gets placed on a user (Steam users always receive 100), and also
+control whether the new user can place spawns. This can be used in combination with a whitelist
+or manual approval to control spawning.
+
+```ini
+[auth]
+cpu = 100
+preventSpawning = false
+```
