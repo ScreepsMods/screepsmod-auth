@@ -27,6 +27,6 @@
     "passport-github": "^1.1.0",
     "passport-http": "^0.3.0",
     "passport-local": "^1.0.0",
-    "passport-steam": "^1.0.8"
+    "passport-steam": "^1.0.9"
   }
 }
