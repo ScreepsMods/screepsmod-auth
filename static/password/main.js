@@ -17,8 +17,18 @@
           })
       })
     }
-    steam () {
-      return this.newpass === this.newpass2
+    steam ($event) {
+      if (this.newpass) {
+        if (this.newpass !== this.newpass2) {
+          this.status = 'Password mismatch!'
+        } else if (this.newpass.length < 4) {
+          this.status = 'Password too short!'
+        } else {
+          this.status = 'Steam Auth...'
+          return
+        }
+      }
+      $event.preventDefault()
     }
   }
   class API {
