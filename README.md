@@ -8,23 +8,25 @@
 
 # Installation 
 
-1. Either run `npm install screepsmod-auth` in your screeps private server folder or subscribe the Steam workshop  https://steamcommunity.com/sharedfiles/filedetails/?id=800390576 if your using the in-game private server.
+1a. If you are using the in-game private server from Steam, then subscribe the Steam workshop  https://steamcommunity.com/sharedfiles/filedetails/?id=800390576
 
-2. Modify mods.json and add a new line in your mods list pointing to this mod like so:
+1b. If you are using the screeps standalone private server, run `npm install screepsmod-auth` folder, and modify mods.json and add a new line in your mods list pointing to this mod like so:
 
 ```
   "mods": [
     "node_modules\\screepsmod-auth\\index.js"
   ],
 ```
-3. Relaunch your screeps private server.
+
+2. Relaunch your screeps private server.
+
 3. Follow the 
 [CLI steps](#screeps-server-command-line-interface-cli-method) below to setup your username and password 
 
 # Setup
 
 ## Screeps Server Command Line Interface (CLI) method
-1. Connect to your screeps private server once to create your account.  You don't need to set an email as that won't be used.  Just username and password is important.
+1. Connect to your screeps private server once to create your account.  You don't need to set an email.  Just username and password is important.
 
 2. Run the server's command line interface (CLI) either in Steam, or if your running a standalone server as described here https://github.com/screeps/screeps#command-line-interface-cli
 
@@ -39,19 +41,9 @@ Note: that setPassword says to pass in the email.  Don't do this.  Instead give 
 
 5. Now you should be able to login 
 
-## Web Form Method
-1. Connect to your screeps private server once to create your account.  You don't need to set an email as that won't be used.  Just username and password is important.
-
-2. Send a POST call to http://yourServerHostOrIP:21025/authmod/password/ with this header:
-```
-Content-Type: application/json
-```
-and the body of
-
-```
-{ "email":"yourUserName", "password": "yourPassword" }
-```
-
+## Web Form Method 
+1. Connect to your screeps private server once to create your account. 
+2. Send a POST call to http://yourServerHostOrIP:21025/authmod/password/
 3. Enter your desired password
 4. Click Signin with steam
 5. Your password should be set and you be able to login via API
