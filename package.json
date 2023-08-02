@@ -1,6 +1,6 @@
 {
   "name": "screepsmod-auth",
-  "version": "2.7.1",
+  "version": "2.7.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,6 @@
     "passport-gitlab2": "^5.0.0",
     "passport-http": "^0.3.0",
     "passport-local": "^1.0.0",
-    "passport-steam": "^1.0.9"
+    "passport-steam": "1.0.17"
   }
 }
