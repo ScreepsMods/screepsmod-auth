@@ -29,7 +29,7 @@
     "passport-gitlab2": "^5.0.0",
     "passport-http": "^0.3.0",
     "passport-local": "^1.0.0",
-    "passport-steam": "1.0.17"
+    "passport-steam": "1.0.9"
   },
   "peerDependencies": {
     "@screeps/backend": ">=3.2.0"
