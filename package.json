@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "npx standard lib/**/*.js",
+    "test": "npx standard",
     "2npm": "publish"
   },
   "devDependencies": {
