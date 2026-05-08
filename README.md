@@ -28,7 +28,7 @@
 # API
 
 ### config.auth.authUser(username,password)
-Returns a Promise, resovles to either the user object or `false`
+Returns a Promise, resolves to either the user object or `false`
 
 # Github Auth
 To enable github auth, you need to add a github client id and client secret to your .screepsrc  
