@@ -35,6 +35,5 @@
     "passport-steam": "1.0.9"
   },
   "peerDependencies": {
-    "@screeps/backend": ">=3.2.0"
   }
 }
