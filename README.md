@@ -75,6 +75,14 @@ serverConfig:
     preventSpawning: false
 ```
 
+# Server CLI commands
+
+This mod uses the `auth` namespace to expose commands to the server's CLI:
+- `auth.setPassword(username, password)` - Set a user's password for API login
+- `auth.createAuthToken(username, description?)` - Creates a full-access API token for a given user
+- `auth.listUserTokenRateLimits(username)` - Lists all tokens for a user and active no-ratelimit windows.
+- `auth.getTokenRateLimit(username?)` - Shows currently active rate-limit usage per token (optionally scoped to one user).
+
 # Auth token rate limiting
 
 Rate limiting for persistent API tokens is **disabled by default**. When enabled, limits match the [official Screeps auth token docs](https://docs.screeps.com/auth-tokens.html#Rate-Limiting).
