@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      basic-auth:
-        specifier: ^1.0.4
-        version: 1.1.0
       body-parser:
         specifier: ^1.15.2
         version: 1.20.4
@@ -97,10 +94,6 @@ packages:
   base64url@3.0.1:
     resolution: {integrity: sha512-ir1UPr3dkwexU7FdV8qBBbNDRUhMmIekYMFZfi+C/sLNnRESKPl23nB9b2pltqfOQNnGzsDdId90AEtG5tCx4A==}
     engines: {node: '>=6.0.0'}
-
-  basic-auth@1.1.0:
-    resolution: {integrity: sha512-CtGuTyWf3ig+sgRyC7uP6DM3N+5ur/p8L+FPfsd+BbIfIs74TFfCajZTHnCw6K5dqM0bZEbRIqRy1fAdiUJhTA==}
-    engines: {node: '>= 0.6'}
 
   bcrypt-pbkdf@1.0.2:
     resolution: {integrity: sha512-qeFIXtP4MSoi6NLqO12WfqARWWuCKi2Rn/9hJLEmtB5yTNr9DqFWkJRCf2qShWzPeAMRnOgCrq0sg/KLv5ES9w==}
@@ -939,8 +932,6 @@ snapshots:
   aws4@1.13.2: {}
 
   base64url@3.0.1: {}
-
-  basic-auth@1.1.0: {}
 
   bcrypt-pbkdf@1.0.2:
     dependencies:

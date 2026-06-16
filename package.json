@@ -18,7 +18,6 @@
   "author": "Adam Shumann",
   "license": "MIT",
   "dependencies": {
-    "basic-auth": "^1.0.4",
     "ini": "^1.3.4",
     "passport-github": "^1.1.0",
     "passport-gitlab2": "^5.0.0",
