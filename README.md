@@ -75,10 +75,44 @@ serverConfig:
     preventSpawning: false
 ```
 
+# Server CLI commands
+
+This mod uses the `auth` namespace to expose commands to the server's CLI:
+- `auth.setPassword(username, password)` - Set a user's password for API login
+- `auth.createAuthToken(username, description?)` - Creates a full-access API token for a given user
+- `auth.listUserTokenRateLimits(username)` - Lists all tokens for a user and active no-ratelimit windows.
+- `auth.getTokenRateLimit(username?)` - Shows currently active rate-limit usage per token (optionally scoped to one user).
+
+# Auth token rate limiting
+
+Rate limiting for persistent API tokens is **disabled by default**. When enabled, limits match the [official Screeps auth token docs](https://docs.screeps.com/auth-tokens.html#Rate-Limiting).
+
+Enable via `.screepsrc`:
+
+```ini
+[auth]
+rateLimitEnabled = true
+ratelimit.global = 240,60
+ratelimit.GET.api.user.memory = 2880,86400
+ratelimit.GET.api.user.code = null
+```
+
+Key pattern: `ratelimit.<METHOD>.<path.with.dots>` (e.g. `ratelimit.GET.api.game.market.orders = 120,3600`). Value is `max,window` in seconds; `max` alone overrides only the limit count; `null` disables that bucket (`max: null`).
+
+```yaml
+serverConfig:
+  auth:
+    rateLimitEnabled: true
+    rateLimits:
+      global: { max: 240, window: 60 }
+      "GET /api/user/memory": { max: 2880 }
+      "GET /api/user/code": { max: null }
+```
+
 # API
 
 ### config.auth.config
-Resolved mod configuration (merged from `.screepsrc` and `config.yml`). Example: `config.auth.config.registerCpu`.
+Resolved mod configuration (merged from `.screepsrc` and `config.yml`). Examples: `config.auth.config.registerCpu`, `config.auth.config.rateLimitEnabled`, `config.auth.config.rateLimits`.
 
 ### config.auth.authUser(username,password)
 Returns a Promise, resolves to either the user object or `false`
