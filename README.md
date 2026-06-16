@@ -22,7 +22,7 @@
 
 ## Server CLI method
 1. Open the screeps server CLI (`npx screeps cli` or via Steam Server UI)
-2. Run `setPassword('Username', 'YourDesiredPassword')`
+2. Run `auth.setPassword('Username', 'YourDesiredPassword')`
 3. Now you should be able to login via API
 
 # API
