@@ -21,7 +21,7 @@
     "passport-github": "^1.1.0",
     "passport-gitlab2": "^5.0.0",
     "passport-local": "^1.0.0",
-    "passport-steam": "1.0.9"
+    "passport-steam": "1.0.18"
   },
   "peerDependencies": {
     "body-parser": "^1.15.2",

@@ -14,4 +14,3 @@ updates:
       - dependency-name: passport
       - dependency-name: passport-http
       - dependency-name: passport-token
-      - dependency-name: passport-steam
