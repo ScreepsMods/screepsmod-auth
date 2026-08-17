@@ -6,7 +6,7 @@
 
 [![Circle CI](https://circleci.com/gh/ScreepsMods/screepsmod-auth.svg?style=shield)](https://circleci.com/gh/ScreepsMods/screepsmod-auth)
 
-# Installation 
+# Installation
 
 1. `npm install screepsmod-auth` in your server folder.
 2. Thats it!
@@ -47,7 +47,7 @@ Clients connecting to the server must send this password (for example via the `X
 
 Set `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` in the environment.
 
-Make sure to set the callback url to point to `/api/auth/github/return` on your server. ex: `https://screeps.mydomain.com/api/auth/github/return`  
+Make sure to set the callback url to point to `/api/auth/github/return` on your server. ex: `https://screeps.mydomain.com/api/auth/github/return`
 Get the id and secret from your Github settings: https://github.com/settings/developers
 
 ## GitLab Auth
@@ -109,7 +109,18 @@ serverConfig:
       "GET /api/user/code": { max: null }
 ```
 
-# API
+# CLI commands
+
+This mod exposes a number of CLI commands via the `auth` namespace.
+
+Run the command `help(auth)` to get a list of commands:
+- `auth.createUser(username, opts?)` - Create a new user account. `opts` can be used to set additional user fields (ex: `email`). No authentication method is configured by default, so this command should typically be followed by `setPassword()`.
+- `auth.setPassword(username, password)` - Set a user's password for login and API authentication
+- `auth.createAuthToken(username, description?)` - Creates a full-access API token for a given user
+- `auth.listUserTokenRateLimits(username)` - Lists all tokens for a user and active no-ratelimit windows.
+- `auth.getTokenRateLimit(username?)` - Shows currently active rate-limit usage per token (optionally scoped to one user).
+
+# API endpoints
 
 ### config.auth.config
 Resolved mod configuration (merged from `.screepsrc` and `config.yml`). Examples: `config.auth.config.registerCpu`, `config.auth.config.rateLimitEnabled`, `config.auth.config.rateLimits`.
