@@ -2,9 +2,11 @@
 
 ## This adds user/pass auth to the screeps private server
 
-[![NPM info](https://nodei.co/npm/screepsmod-auth.png?downloads=true)](https://npmjs.org/package/screepsmod-auth)
-
-[![Circle CI](https://circleci.com/gh/ScreepsMods/screepsmod-auth.svg?style=shield)](https://circleci.com/gh/ScreepsMods/screepsmod-auth)
+[![License](https://img.shields.io/npm/l/screepsmod-auth.svg)](https://npmjs.com/package/screepsmod-auth)
+[![Version](https://img.shields.io/npm/v/screepsmod-auth.svg)](https://npmjs.com/package/screepsmod-auth)
+[![Downloads](https://img.shields.io/npm/dw/screepsmod-auth.svg)](https://npmjs.com/package/screepsmod-auth)
+[![Test](https://github.com/ScreepsMods/screepsmod-auth/actions/workflows/test.yml/badge.svg)](https://github.com/ScreepsMods/screepsmod-auth/actions/workflows/test.yml)
+[![Publish](https://github.com/ScreepsMods/screepsmod-auth/actions/workflows/publish.yml/badge.svg)](https://github.com/ScreepsMods/screepsmod-auth/actions/workflows/publish.yml)
 
 # Installation 
 
