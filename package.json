@@ -7,8 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "npx standard",
-    "2npm": "publish"
+    "test": "npx standard"
   },
   "screeps_mod": true,
   "keywords": [
@@ -33,7 +32,6 @@
     "passport-token": "^0.2.0"
   },
   "devDependencies": {
-    "@screeps/backend": ">=3.2.0",
-    "publish": "^0.6.0"
+    "@screeps/backend": ">=3.2.0"
   }
 }
