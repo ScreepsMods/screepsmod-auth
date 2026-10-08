@@ -1,0 +1,16 @@
+# Dependencies aligned with @screeps/backend are peerDependencies — the host
+# server already installs them. Only mod-specific packages are updated here.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    ignore:
+      - dependency-name: "@screeps/backend"
+      - dependency-name: body-parser
+      - dependency-name: cookie-parser
+      - dependency-name: express
+      - dependency-name: passport
+      - dependency-name: passport-http
+      - dependency-name: passport-token

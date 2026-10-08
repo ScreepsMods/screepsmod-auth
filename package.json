@@ -7,12 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "npx standard",
-    "2npm": "publish"
-  },
-  "devDependencies": {
-    "@screeps/backend": ">=3.2.0",
-    "publish": "^0.6.0"
+    "test": "npx standard"
   },
   "screeps_mod": true,
   "keywords": [
@@ -22,19 +17,21 @@
   "author": "Adam Shumann",
   "license": "MIT",
   "dependencies": {
-    "basic-auth": "^1.0.4",
+    "ini": "^7.0.0",
+    "passport-github": "^1.1.0",
+    "passport-gitlab2": "^5.0.0",
+    "passport-local": "^1.0.0",
+    "passport-steam": "1.0.18"
+  },
+  "peerDependencies": {
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
-    "ini": "^1.3.4",
     "passport": "^0.3.2",
-    "passport-github": "^1.1.0",
-    "passport-gitlab2": "^5.0.0",
     "passport-http": "^0.3.0",
-    "passport-local": "^1.0.0",
-    "passport-steam": "1.0.9"
+    "passport-token": "^0.2.0"
   },
-  "peerDependencies": {
+  "devDependencies": {
     "@screeps/backend": ">=3.2.0"
   }
 }
