@@ -78,6 +78,8 @@ serverConfig:
 # Server CLI commands
 
 This mod uses the `auth` namespace to expose commands to the server's CLI:
+- `auth.banUser(username, remove = false)` - Soft-ban a user, or delete them when `remove` is true
+- `auth.unbanUser(username)` - Clear a ban, including a hard-ban record left after the account was deleted
 - `auth.setPassword(username, password)` - Set a user's password for API login
 - `auth.createAuthToken(username, description?)` - Creates a full-access API token for a given user
 - `auth.listUserTokenRateLimits(username)` - Lists all tokens for a user and active no-ratelimit windows.
